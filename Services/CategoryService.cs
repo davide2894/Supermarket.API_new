@@ -8,15 +8,15 @@ namespace Supermarket.API.Services
 {
     public class CategoryService : ICategoryService
     {
-        private readonly ICategoryRepository _categoryRepository;
+        private readonly ICategoryRepository _categoryRepository;   
         public CategoryService(ICategoryRepository categoryRepository)
         {
             _categoryRepository = categoryRepository;
         }
-        public async Task<IEnumerable<Category>> ListAllCategoriesAsync()
+        public async Task<IEnumerable<Category>> ListAsync()
         {
             //use repository pattern to handle data acess to and from db
-            return await _categoryRepository.ListAllCategoriesAsync();
+            return await _categoryRepository.ListAsync();
         }
     }
 }

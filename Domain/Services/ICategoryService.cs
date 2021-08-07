@@ -6,6 +6,6 @@ namespace Supermarket.API.Domain.Services
 {
     public interface ICategoryService
     {
-        Task<IEnumerable<Category>> ListAllCategoriesAsync();
+        Task<IEnumerable<Category>> ListAsync();
     }
 }
