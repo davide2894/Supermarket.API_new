@@ -36,7 +36,8 @@ namespace Supermarket.API.Persistence.Contexts
             builder
                 .Entity<Category>()
                 .HasMany(property => property.Products)
-                .WithOne(property => property.Category);
+                .WithOne(property => property.Category)
+                .HasForeignKey(property => property.CategoryId);
 
             builder
                 .Entity<Category>()

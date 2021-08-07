@@ -11,6 +11,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using Supermarket.API.Domain.Repositories;
+using Supermarket.API.Domain.Services;
+using Supermarket.API.Persistence.Contexts;
+using Supermarket.API.Persistence.Repositories;
+using Supermarket.API.Services;
+using Supermarket.API_new.Persistence.Repositories;
 
 namespace Supermarket.APi_new
 {
@@ -26,12 +33,14 @@ namespace Supermarket.APi_new
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Supermarket.APi_new", Version = "v1" });
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            
+            services.AddDbContext<AppDbContext>( options =>  {
+                options.UseInMemoryDatabase("supermarket-api-in-memory");
             });
+
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ICategoryService, CategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,20 +49,14 @@ namespace Supermarket.APi_new
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Supermarket.APi_new v1"));
+            } 
+            else 
+            {
+                app.UseHsts();
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
         }
     }
 }

@@ -34,6 +34,7 @@
       "Supermarket.APi_new/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.8",
+          "Microsoft.EntityFrameworkCore.InMemory": "5.0.8",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.8",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -358,6 +359,20 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/5.0.8": {},
+      "Microsoft.EntityFrameworkCore.InMemory/5.0.8": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.8"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "5.0.8.0",
+            "fileVersion": "5.0.821.31512"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/5.0.8": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.8",
@@ -2217,6 +2232,13 @@
       "sha512": "sha512-iXH3FyGochg9ZePG1VQwVT3YGsvhn8jmQkhi7iIKfa16xgSevpa9jhKDflFSMZ9xI9xWAsOAiG+H+pG6Jsw/3w==",
       "path": "microsoft.entityframeworkcore.analyzers/5.0.8",
       "hashPath": "microsoft.entityframeworkcore.analyzers.5.0.8.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/5.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LV9/hBseBO3kZKa/MPlWfLvfKL64Q7y2ZW2euW+kcNhhAQWsl52JIQHSL1Gu3CnzfQVbGUDkusnN4OWh6k/ALw==",
+      "path": "microsoft.entityframeworkcore.inmemory/5.0.8",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.5.0.8.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.8": {
       "type": "package",

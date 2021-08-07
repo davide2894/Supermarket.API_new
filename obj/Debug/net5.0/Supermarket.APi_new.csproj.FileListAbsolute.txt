@@ -33,3 +33,4 @@
 /home/davide/code/Supermarket.APi_new/obj/Debug/net5.0/Supermarket.APi_new.pdb
 /home/davide/code/Supermarket.APi_new/obj/Debug/net5.0/Supermarket.APi_new.genruntimeconfig.cache
 /home/davide/code/Supermarket.APi_new/bin/Debug/net5.0/omnisharp.json
+/home/davide/code/Supermarket.API_new/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.InMemory.dll
