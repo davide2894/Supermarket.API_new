@@ -17,13 +17,15 @@ namespace Supermarket.APi_new
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args);
-            
-            using(var scope = host.Services.CreateScope())
 
-            using(var context = scope.ServiceProvider.GetService<AppDbContext>())
+            using (var scope = host.Services.CreateScope())
+
+            using (var context = scope.ServiceProvider.GetService<AppDbContext>())
             {
                 context.Database.EnsureCreated();
             }
+
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

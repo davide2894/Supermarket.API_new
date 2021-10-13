@@ -34,8 +34,9 @@ namespace Supermarket.APi_new
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-            
-            services.AddDbContext<AppDbContext>( options =>  {
+
+            services.AddDbContext<AppDbContext>(options =>
+            {
                 options.UseInMemoryDatabase("supermarket-api-in-memory");
             });
 
@@ -49,14 +50,18 @@ namespace Supermarket.APi_new
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            } 
-            else 
+            }
+            else
             {
                 app.UseHsts();
             }
 
             app.UseHttpsRedirection();
             app.UseRouting();
+            app.UseEndpoints(endpoint =>
+            {
+                endpoint.MapControllers();
+            });
         }
     }
 }

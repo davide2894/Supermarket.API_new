@@ -6,7 +6,7 @@ using Supermarket.API.Domain.Services;
 
 namespace Supermarket.API.Controllers
 {
-    [Route("/api/[controller]")]
+    [Route("/api/categories")]
     public class CategoriesController : Controller
     {
         private readonly ICategoryService _categoryService;

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\code\Supermarket.API_new" t="IncludeRecursive">
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Controllers" t="Include">
+        <e p="CategoriesController.cs" t="Include" />
+      </e>
+      <e p="Domain" t="Include">
+        <e p="Models" t="Include">
+          <e p="Category.cs" t="Include" />
+          <e p="EUnitOfMeasurement.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="ICategoryRepository.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="ICategoryService.cs" t="Include" />
+        </e>
+      </e>
+      <e p="LICENSE" t="Include" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="net5.0" t="Include">
+            <e p="Supermarket.APi_new.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="omnisharp.json" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Persistence" t="Include">
+        <e p="Contexts" t="Include">
+          <e p="AppDbContext.cs" t="Include" />
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="BaseRepository.cs" t="Include" />
+          <e p="CategoryRepository.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="README.md" t="Include" />
+      <e p="Services" t="Include">
+        <e p="CategoryService.cs" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+      <e p="Supermarket.APi_new.csproj" t="IncludeRecursive" />
+    </e>
+    <e p="C:\Users\iaiunesed\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\iaiunesed\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\iaiunesed\AppData\Roaming\JetBrains\Rider2020.1\extensions" t="IncludeRecursive" />
+  </component>
+</project>
