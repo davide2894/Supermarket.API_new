@@ -20,11 +20,11 @@ namespace Supermarket.APi_new.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Category>> GetAllCategoriesAsync()
+        public async Task<IEnumerable<CategoryResource>> GetAllCategoriesAsync()
         {
             var categories = await _categoryService.ListAsync();
             var resources = _mapper.Map<IEnumerable<Category>, IEnumerable<CategoryResource>>(categories);
-            return categories;
+            return resources;
         }
     }
 }
