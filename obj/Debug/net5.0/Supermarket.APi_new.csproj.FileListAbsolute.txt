@@ -70,3 +70,5 @@ C:\code\Supermarket.API_new\obj\Debug\net5.0\Supermarket.APi_new.dll
 C:\code\Supermarket.API_new\obj\Debug\net5.0\ref\Supermarket.APi_new.dll
 C:\code\Supermarket.API_new\obj\Debug\net5.0\Supermarket.APi_new.pdb
 C:\code\Supermarket.API_new\obj\Debug\net5.0\Supermarket.APi_new.genruntimeconfig.cache
+C:\code\Supermarket.API_new\bin\Debug\net5.0\AutoMapper.dll
+C:\code\Supermarket.API_new\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

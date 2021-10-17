@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b837613c-375e-4c5c-9c0d-ba1b238e30c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Supermarket.APi_new.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Supermarket.APi_new.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/CategoriesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CategoriesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Supermarket.APi_new.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Supermarket.APi_new.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Supermarket.APi_new.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Supermarket.APi_new.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Supermarket.APi_new.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Supermarket.APi_new.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/Supermarket.APi_new.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Supermarket.APi_new.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Supermarket.APi_new.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Supermarket.APi_new.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Supermarket.APi_new.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Supermarket.APi_new.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Supermarket.APi_new.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Supermarket.APi_new.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Supermarket.APi_new.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Supermarket.APi_new.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Supermarket.APi_new.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Supermarket.APi_new.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Supermarket.APi_new.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
     </list>
@@ -83,10 +85,14 @@
       <option name="presentableId" value="Default" />
       <updated>1634116302819</updated>
       <workItem from="1634116310513" duration="34000" />
+      <workItem from="1634469874812" duration="25000" />
     </task>
     <servers />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
