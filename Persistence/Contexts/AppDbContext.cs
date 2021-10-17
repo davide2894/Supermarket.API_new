@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Supermarket.API.Domain.Models;
+using Supermarket.APi_new.Domain.Models;
 
-namespace Supermarket.API.Persistence.Contexts
+namespace Supermarket.APi_new.Persistence.Contexts
 {
     public class AppDbContext : DbContext
     {
@@ -18,21 +18,21 @@ namespace Supermarket.API.Persistence.Contexts
             builder
                 .Entity<Category>()
                 .ToTable("Categories");
-            
+
             builder
                 .Entity<Category>()
                 .HasKey(property => property.Id);
-            
+
             builder
                 .Entity<Category>()
                 .Property(property => property.Id).IsRequired().ValueGeneratedOnAdd();
-            
+
             builder
                 .Entity<Category>()
                 .Property(property => property.Name)
                 .IsRequired()
                 .HasMaxLength(30);
-            
+
             builder
                 .Entity<Category>()
                 .HasMany(property => property.Products)
@@ -42,11 +42,13 @@ namespace Supermarket.API.Persistence.Contexts
             builder
                 .Entity<Category>()
                 .HasData(
-                    new Category{
+                    new Category
+                    {
                         Id = 100,
                         Name = "Fruits and Vegetables"
                     },
-                    new Category {
+                    new Category
+                    {
                         Id = 101,
                         Name = "Dairy",
                     }
@@ -58,7 +60,7 @@ namespace Supermarket.API.Persistence.Contexts
             // per la proprietà NAME -> required & max lenght is 50  
             // per la proprietà qty in package -> required
             // per la proprietà unity of measure -> required  
-            
+
             builder.Entity<Product>().ToTable("Products");
             builder.Entity<Product>().HasKey(p => p.Id);
             builder.Entity<Product>().Property(p => p.Name).IsRequired().HasMaxLength(50);

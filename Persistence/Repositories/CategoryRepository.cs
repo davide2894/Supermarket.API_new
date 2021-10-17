@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Supermarket.API.Domain.Models;
-using Supermarket.API.Domain.Repositories;
-using Supermarket.API.Persistence.Contexts;
-using Supermarket.API.Persistence.Repositories;
+using Supermarket.APi_new.Domain.Models;
+using Supermarket.APi_new.Domain.Repositories;
+using Supermarket.APi_new.Persistence.Contexts;
+using Supermarket.APi_new.Persistence.Repositories;
 
 namespace Supermarket.API_new.Persistence.Repositories
 {
@@ -12,7 +12,7 @@ namespace Supermarket.API_new.Persistence.Repositories
     {
         public CategoryRepository(AppDbContext context) : base(context)
         {
-            
+
         }
 
         public async Task<IEnumerable<Category>> ListAsync()

@@ -14,5 +14,14 @@
     <Content Include="README.md" />
     <Content Include="LICENSE" />
     <Content Include="Program.cs" />
+    <Content Include="Resources\CategoryResource.cs" />
+    <Content Include="Domain\Models\Category.cs" />
+    <Content Include="Domain\Models\EUnitOfMeasurement.cs" />
+    <Content Include="Persistence\Contexts\AppDbContext.cs" />
+    <Content Include="Domain\Services\ICategoryService.cs" />
+    <Content Include="Persistence\Repositories\CategoryRepository.cs" />
+    <Content Include="Persistence\Repositories\BaseRepository.cs" />
+    <Content Include="Domain\Models\Product.cs" />
+    <Content Include="Services\CategoryService.cs" />
   </ItemGroup>
 </Project>
