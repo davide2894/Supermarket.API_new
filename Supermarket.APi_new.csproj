@@ -15,6 +15,7 @@
     <Content Include="LICENSE" />
     <Content Include="Program.cs" />
     <Content Include="Resources\CategoryResource.cs" />
+    <Content Include="Resources\SaveCategoryResource.cs" />
     <Content Include="Domain\Models\Category.cs" />
     <Content Include="Domain\Models\EUnitOfMeasurement.cs" />
     <Content Include="Persistence\Contexts\AppDbContext.cs" />
