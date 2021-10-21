@@ -30,6 +30,11 @@ namespace Supermarket.APi_new.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveCategoryResource saveCategoryResouce)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState.GetErrorMessages());
+            }
+
             return null;
         }
     }

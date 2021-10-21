@@ -25,5 +25,6 @@
     <Content Include="Domain\Models\Product.cs" />
     <Content Include="Services\CategoryService.cs" />
     <Content Include="Mapping\ModelToResource.cs" />
+    <Content Include="Extensions\ModelStateExtensions.cs" />
   </ItemGroup>
 </Project>
