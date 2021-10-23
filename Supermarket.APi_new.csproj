@@ -27,5 +27,7 @@
     <Content Include="Mapping\ModelToResource.cs" />
     <Content Include="Extensions\ModelStateExtensions.cs" />
     <Content Include="Mapping\SaveResourceToModel.cs" />
+    <Content Include="Communication\SaveCategoryResponse.cs" />
+    <Content Include="Communication\BaseResponse.cs" />
   </ItemGroup>
 </Project>
