@@ -5,6 +5,7 @@ using Supermarket.APi_new.Domain.Models;
 using Supermarket.APi_new.Domain.Services;
 using AutoMapper;
 using Supermarket.APi_new.Resources;
+using Supermarket.APi_new.Extensions;
 
 namespace Supermarket.APi_new.Controllers
 {
@@ -34,6 +35,8 @@ namespace Supermarket.APi_new.Controllers
             {
                 return BadRequest(ModelState.GetErrorMessages());
             }
+
+            var category = _mapper.Map<SaveCategoryResource, Category>(saveCategoryResouce);
 
             return null;
         }
