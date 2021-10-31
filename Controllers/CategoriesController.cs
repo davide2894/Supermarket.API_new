@@ -38,7 +38,18 @@ namespace Supermarket.API_new.Controllers
 
             var category = _mapper.Map<SaveCategoryResource, Category>(saveCategoryResouce);
 
-            return null;
+            var saveCategoryResponse = await _categoryService.SaveAsync(category);
+            
+            if(!saveCategoryResponse.Success)
+            {
+                return BadRequest(saveCategoryResponse.Message);
+            }
+
+            // category saving process to db was successfull
+
+            var categoryResource = _mapper.Map<Category, CategoryResource>(category);
+
+            return Ok(categoryResource);
         }
     }
 }
