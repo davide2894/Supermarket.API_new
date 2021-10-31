@@ -1,4 +1,4 @@
-namespace Supermarket.APi_new.Resources
+namespace Supermarket.API_new.Resources
 {
     public class CategoryResource
     {

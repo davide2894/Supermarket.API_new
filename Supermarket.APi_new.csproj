@@ -2,7 +2,15 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Supermarket.API_new</AssemblyName>
+    <RootNamespace>Supermarket.API_new</RootNamespace>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Communication\**" />
+    <Content Remove="Communication\**" />
+    <EmbeddedResource Remove="Communication\**" />
+    <None Remove="Communication\**" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
@@ -27,7 +35,7 @@
     <Content Include="Mapping\ModelToResource.cs" />
     <Content Include="Extensions\ModelStateExtensions.cs" />
     <Content Include="Mapping\SaveResourceToModel.cs" />
-    <Content Include="Communication\SaveCategoryResponse.cs" />
-    <Content Include="Communication\BaseResponse.cs" />
+    <Content Include="Domain\Services\Communication\BaseResponse.cs" />
+    <Content Include="Domain\Services\Communication\SaveCategoryResponse.cs" />
   </ItemGroup>
 </Project>

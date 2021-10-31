@@ -12,14 +12,14 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
-using Supermarket.APi_new.Domain.Repositories;
-using Supermarket.APi_new.Domain.Services;
-using Supermarket.APi_new.Persistence.Contexts;
-using Supermarket.APi_new.Persistence.Repositories;
-using Supermarket.APi_new.Services;
+using Supermarket.API_new.Domain.Repositories;
+using Supermarket.API_new.Domain.Services;
+using Supermarket.API_new.Persistence.Contexts;
+using Supermarket.API_new.Persistence.Repositories;
+using Supermarket.API_new.Services;
 using Supermarket.API_new.Persistence.Repositories;
 
-namespace Supermarket.APi_new
+namespace Supermarket.API_new
 {
     public class Startup
     {

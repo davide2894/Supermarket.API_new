@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Supermarket.APi_new.Persistence.Contexts;
+using Supermarket.API_new.Persistence.Contexts;
 
-namespace Supermarket.APi_new
+namespace Supermarket.API_new
 {
     public class Program
     {

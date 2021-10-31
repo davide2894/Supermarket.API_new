@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace Supermarket.APi_new.Extensions
+namespace Supermarket.API_new.Extensions
 {
     public static class ModelStateExtensions
     {

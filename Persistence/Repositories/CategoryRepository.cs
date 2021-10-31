@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Supermarket.APi_new.Domain.Models;
-using Supermarket.APi_new.Domain.Repositories;
-using Supermarket.APi_new.Persistence.Contexts;
-using Supermarket.APi_new.Persistence.Repositories;
+using Supermarket.API_new.Domain.Models;
+using Supermarket.API_new.Domain.Repositories;
+using Supermarket.API_new.Persistence.Contexts;
+using Supermarket.API_new.Persistence.Repositories;
 
 namespace Supermarket.API_new.Persistence.Repositories
 {

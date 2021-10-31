@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Supermarket.APi_new.Domain.Models;
-using Supermarket.APi_new.Domain.Services;
+using Supermarket.API_new.Domain.Models;
+using Supermarket.API_new.Domain.Services;
 using AutoMapper;
-using Supermarket.APi_new.Resources;
-using Supermarket.APi_new.Extensions;
+using Supermarket.API_new.Resources;
+using Supermarket.API_new.Extensions;
 
-namespace Supermarket.APi_new.Controllers
+namespace Supermarket.API_new.Controllers
 {
     [Route("/api/categories")]
     public class CategoriesController : Controller

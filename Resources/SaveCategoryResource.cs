@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Supermarket.APi_new.Resources
+namespace Supermarket.API_new.Resources
 {
     public class SaveCategoryResource
     {
