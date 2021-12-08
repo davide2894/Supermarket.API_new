@@ -11,5 +11,6 @@ namespace Supermarket.API_new.Domain.Services
         //create method that saves a category in the db
         // so in browser, you save a category, but the returned type should be SaveCategoryResponse
         Task<SaveCategoryResponse> SaveAsync(Category category);
+        Task<SaveCategoryResponse> UpdateAsync(int id, Category category);
     }
 }
