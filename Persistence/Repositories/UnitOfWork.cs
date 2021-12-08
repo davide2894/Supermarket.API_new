@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
-using Supermarket.API.Domain.Repositories;
-using Supermarket.API.Persistence.Contexts;
+using Supermarket.API_new.Domain.Repositories;
+using Supermarket.API_new.Persistence.Contexts;
 namespace Supermarket.API_new.Persistence.Repositories
 {
     public class UnitOfWork : IUnitOfWork
@@ -12,7 +12,7 @@ namespace Supermarket.API_new.Persistence.Repositories
             _context = context;
         }
 
-        public Task CompleteAsync()
+        public async Task CompleteAsync()
         {
             await _context.SaveChangesAsync();
         }

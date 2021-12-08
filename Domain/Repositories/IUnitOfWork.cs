@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Supermarket.API_new.Domain.Repositories
 {
-    public interface IUnitOfWOrk
+    public interface IUnitOfWork
     {
         Task CompleteAsync();
     }
