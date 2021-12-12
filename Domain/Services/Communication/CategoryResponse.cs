@@ -2,11 +2,11 @@ using Supermarket.API_new.Domain.Models;
 
 namespace Supermarket.API_new.Domain.Services.Communication
 {
-    public class SaveCategoryResponse : BaseResponse
+    public class CategoryResponse : BaseResponse
     {
         public Category ResponseCategory { get; private set; }
 
-        private SaveCategoryResponse(bool success, string message, Category category) : base(success, message)
+        private CategoryResponse(bool success, string message, Category category) : base(success, message)
         {
             ResponseCategory = category;
         }
@@ -16,7 +16,7 @@ namespace Supermarket.API_new.Domain.Services.Communication
         /// </summary>
         /// <param name="category">Saved category.</param>
         /// <returns>Response.</returns>
-        public SaveCategoryResponse(Category category) : this(true, string.Empty, category)
+        public CategoryResponse(Category category) : this(true, string.Empty, category)
         { }
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace Supermarket.API_new.Domain.Services.Communication
         /// </summary>
         /// <param name="message">Error Message</param>
         /// <returns>Error Message</returns>
-        public SaveCategoryResponse(string message) : this(false, message, null)
+        public CategoryResponse(string message) : this(false, message, null)
         { }
     }
 }

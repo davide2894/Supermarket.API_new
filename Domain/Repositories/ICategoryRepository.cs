@@ -13,5 +13,7 @@ namespace Supermarket.API_new.Domain.Repositories
         Task<Category> FindByIdAsync(int id);
 
         void Update(Category category);
+
+        void Remove(Category category);
     }
 }

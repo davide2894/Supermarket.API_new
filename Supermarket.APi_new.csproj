@@ -36,7 +36,7 @@
     <Content Include="Extensions\ModelStateExtensions.cs" />
     <Content Include="Mapping\ResourceToModelProfile.cs" />
     <Content Include="Domain\Services\Communication\BaseResponse.cs" />
-    <Content Include="Domain\Services\Communication\SaveCategoryResponse.cs" />
+    <Content Include="Domain\Services\Communication\CategoryResponse.cs" />
     <Content Include="Domain\Repositories\ICategoryRepository.cs" />
     <Content Include="Domain\Repositories\IUnitOfWork.cs" />
     <Content Include="Persistence\Repositories\UnitOfWork.cs" />
