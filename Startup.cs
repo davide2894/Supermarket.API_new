@@ -9,15 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using Supermarket.API_new.Domain.Repositories;
 using Supermarket.API_new.Domain.Services;
 using Supermarket.API_new.Persistence.Contexts;
 using Supermarket.API_new.Persistence.Repositories;
 using Supermarket.API_new.Services;
-using Supermarket.API_new.Persistence.Repositories;
 
 namespace Supermarket.API_new
 {
@@ -43,6 +40,8 @@ namespace Supermarket.API_new
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductRepository, ProductRepository>();
 
             services.AddAutoMapper(typeof(Startup));
         }

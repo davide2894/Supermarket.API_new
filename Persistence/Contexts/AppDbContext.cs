@@ -7,6 +7,7 @@ namespace Supermarket.API_new.Persistence.Contexts
     {
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 
@@ -44,6 +45,7 @@ namespace Supermarket.API_new.Persistence.Contexts
                 .HasData(
                     new Category
                     {
+
                         Id = 100,
                         Name = "Fruits and Vegetables"
                     },
@@ -66,6 +68,43 @@ namespace Supermarket.API_new.Persistence.Contexts
             builder.Entity<Product>().Property(p => p.Name).IsRequired().HasMaxLength(50);
             builder.Entity<Product>().Property(p => p.QuantityInPackage).IsRequired();
             builder.Entity<Product>().Property(p => p.UnitOfMeasurement).IsRequired();
+
+            builder
+                .Entity<Product>()
+                .HasData(
+                    new Product
+                    {
+                        Id = 1,
+                        Name = "Apple",
+                        QuantityInPackage = 2,
+                        UnitOfMeasurement = EUnitOfMeasurement.Gram,
+                        CategoryId = 100
+                    },
+                    //new Product
+                    //{
+                    //    Id = 2,
+                    //    Name = "Banana",
+                    //    QuantityInPackage = 2,
+                    //    UnitOfMeasurement = EUnitOfMeasurement.Gram,
+                    //    CategoryId = 100
+                    //},
+                    //new Product
+                    //{
+                    //    Id = 3,
+                    //    Name = "Beanies",
+                    //    QuantityInPackage = 3,
+                    //    UnitOfMeasurement = EUnitOfMeasurement.Kilogram,
+                    //    CategoryId = 101
+                    //},
+                    new Product
+                    {
+                        Id = 4,
+                        Name = "Carrots",
+                        QuantityInPackage = 8,
+                        UnitOfMeasurement = EUnitOfMeasurement.Kilogram,
+                        CategoryId = 101
+                    }
+                );
         }
     }
 }
